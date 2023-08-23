@@ -1,7 +1,5 @@
 # Empowering-Investors-Hackathon
 
-## README.md must consist of the following information:
-
 #### Team Name - Dynamic Squad
 #### Problem Statement - In today's fast-paced world, managing personal finances has become increasingly complex. People often find it challenging to keep track of their expenses, stick to their budgets, and make informed financial decisions. As a result, there is a growing need for a reliable and user-friendly solution that can help individuals effectively manage their personal expenses and budgets.
 #### Team Leader Email - keerthanak.ece2022@citchennai.net
