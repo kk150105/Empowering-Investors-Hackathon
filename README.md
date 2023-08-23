@@ -8,61 +8,35 @@
 
 ## A Brief of the Prototype:
   For the prototype, we as a team actually did a demoo website to how the site will work after developed. This demo gives a clear idea on how the site will be developed in the future.
-  +--------------------------------------+
-|           PersonalExpense             |
-+--------------------------------------+
-| - date: Date                         |
-| - amount: double                     |
-| - category: ExpenseCategory           |
-+--------------------------------------+
-| + getAmount(): double                |
-| + getCategory(): ExpenseCategory     |
-| + getDate(): Date                    |
-+--------------------------------------+
 
-              ^
-              |
-              |
-              |
-              |
+  ![image](https://github.com/kk150105/Empowering-Investors-Hackathon/assets/143043637/759fb82b-0677-41da-a6cc-4dfe2e41029c)
 
-
-+--------------------------------------+
-|         ExpenseCategory               |
-+--------------------------------------+
-| - name: String                       |
-| - budgetLimit: double                 |
-+--------------------------------------+
-| + getName(): String                  |
-| + getBudgetLimit(): double            |
-| + setBudgetLimit(limit: double): void |
-+--------------------------------------+
-
-              ^
-              |
-              |
-              |
-              |
-   
-+--------------------------------------+
-|          ExpenseManager               |
-+--------------------------------------+
-| - expenses: List<PersonalExpense>     |
-| - categories: List<ExpenseCategory>   |
-+--------------------------------------+
-| + addExpense(expense: PersonalExpense): void |
-| + removeExpense(expense: PersonalExpense): void |
-| + addCategory(category: ExpenseCategory): void |
-| + removeCategory(category: ExpenseCategory): void |
-| + getExpenses(): List<PersonalExpense> |
-| + getCategories(): List<ExpenseCategory> |
-+--------------------------------------+
-
-  
 ## Tech Stack: 
    HTML is used for making the prototype.
    
 ## Step-by-Step Code Execution Instructions:
+  class ExpenseCategory:
+    def __init__(self, name, budget_limit):
+        self.name = name
+        self.budget_limit = budget_limit
+
+class PersonalExpense:
+    def __init__(self, date, amount, category):
+        self.date = date
+        self.amount = amount
+        self.category = category
+
+class ExpenseManager:
+    def __init__(self):
+        self.expenses = []
+        self.categories = []
+
+    def add_expense(self, expense):
+        self.expenses.append(expense)
+
+    def add_category(self, category):
+        self.categories.append(category)
+
   def main():
     manager = ExpenseManager()
 
